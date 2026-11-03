@@ -93,8 +93,8 @@
       <section class="case-studies" aria-labelledby="case-title">
         <div class="section-shell case-studies__shell">
           <header class="section-heading">
-            <p class="eyebrow"><span></span> MY CASE STUDIES <span></span></p>
-            <h2 class="display" id="case-title">CASE <em>STUDIES</em><br>I’VE WORKED WITH.</h2>
+            <p class="eyebrow"><span></span> THE SECRET SAUCE <span></span></p>
+            <h2 class="display" id="case-title">CASE <em>STUDIES.</em><br>I’VE WORKED WITH.</h2>
           </header>
           <div class="case-filters" role="group" aria-label="Filter case studies">
             <button type="button" class="case-filter is-active" data-case-category="all" aria-pressed="true">ALL</button>
@@ -103,62 +103,51 @@
             <button type="button" class="case-filter" data-case-category="beauty" aria-pressed="false">💄 Beauty &amp; Fashion</button>
             <button type="button" class="case-filter" data-case-category="pets" aria-pressed="false">🐶 Pets</button>
           </div>
-          <p class="visually-hidden" data-filter-status aria-live="polite">Showing all case studies.</p>
-          <div class="case-layout" data-case-carousel data-category="beauty">
-            <article class="achievement-card">
-              <div class="achievement-card__heading">
-                <p>ACHIEVEMENTS</p>
-                <h3>HEATABLE HOODIE</h3>
-              </div>
-              <div class="achievement-card__stats">
-                <div>
-                  <img src="images/sales.svg" alt="">
-                  <strong>$188K+ SALES</strong>
-                </div>
-                <div>
-                  <img src="images/cvr.svg" alt="">
-                  <strong>+20% CVR</strong>
-                </div>
-                <div>
-                  <img src="images/aov.svg" alt="">
-                  <strong>+6% AOV</strong>
-                </div>
-              </div>
-              <h4>WHAT WE DID:</h4>
-              <ul class="achievement-card__list">
-                <li>Data-driven iteration after launch</li>
-                <li>Buy-box and offer structure to reduce friction</li>
-                <li>Optimized 1-pack, 2-pack, and 3-pack options</li>
-                <li>Product storytelling communication</li>
-              </ul>
-              <a class="audit-button audit-button--small" href="mailto:shishir.helps@gmail.com?subject=Free%20store%20audit">
-                GET YOUR FREE STORE AUDIT <img src="images/arrow.svg" alt="">
-              </a>
-            </article>
-            <div class="case-visuals">
-              <button class="carousel-arrow carousel-arrow--left" type="button" aria-label="Previous case study" data-case-step="-1">←</button>
+          <p class="visually-hidden" data-filter-status aria-live="polite">Showing all case studies. HEAT HOODY.</p>
+          <div class="case-layout" data-case-carousel>
+            <div class="case-visuals" data-case-visuals>
               <figure class="case-page case-page--before">
                 <figcaption>BEFORE</figcaption>
-                <div class="case-page__image"><img src="images/case-before-mobile.png" alt="Heatable Hoodie product page before redesign"></div>
-                <a href="#case-title">How To Scroll ↑</a>
+                <div class="case-page__image" data-case-image-slot="before" tabindex="0" aria-label="Before storefront screenshot, scroll to inspect">
+                  <picture>
+                    <source type="image/webp" sizes="(max-width: 767px) 42vw, 22vw">
+                    <img width="300" height="3077" alt="" data-case-image="before" fetchpriority="high" loading="eager" decoding="async">
+                  </picture>
+                  <span class="case-image-fallback" hidden>Case study screenshot unavailable.</span>
+                </div>
               </figure>
               <figure class="case-page case-page--after">
                 <figcaption>AFTER</figcaption>
-                <div class="case-page__image"><img src="images/case-after-mobile.png" alt="Heatable Hoodie product page after redesign"></div>
-                <a href="#case-title">How To Scroll ↑</a>
+                <div class="case-page__image" data-case-image-slot="after" tabindex="0" aria-label="After storefront screenshot, scroll to inspect">
+                  <picture>
+                    <source type="image/webp" sizes="(max-width: 767px) 50vw, 22vw">
+                    <img width="300" height="3077" alt="" data-case-image="after" fetchpriority="high" loading="eager" decoding="async">
+                  </picture>
+                  <span class="case-image-fallback" hidden>Case study screenshot unavailable.</span>
+                </div>
               </figure>
-              <button class="carousel-arrow carousel-arrow--right" type="button" aria-label="Next case study" data-case-step="1">→</button>
+              <p class="case-scroll-hint">HOVER TO SCROLL</p>
             </div>
+            <article class="achievement-card" aria-labelledby="case-card-title">
+              <div class="achievement-card__heading">
+                <p>ACHIEVEMENTS</p>
+                <h3 id="case-card-title"></h3>
+              </div>
+              <div class="achievement-card__stats" aria-label="Case study results">
+                <div><img src="images/sales.svg" width="40" height="40" alt=""><strong data-case-stat="sales"></strong></div>
+                <div><img src="images/cvr.svg" width="40" height="40" alt=""><strong data-case-stat="cvr"></strong></div>
+                <div><img src="images/aov.svg" width="40" height="40" alt=""><strong data-case-stat="aov"></strong></div>
+              </div>
+              <h4>WHAT WE DID:</h4>
+              <ul class="achievement-card__list" data-case-bullets></ul>
+              <a class="audit-button audit-button--small" href="mailto:shishir.helps@gmail.com?subject=Free%20store%20audit">
+                GET YOUR FREE STORE AUDIT <img src="images/arrow.svg" width="34" height="24" alt="">
+              </a>
+            </article>
+            <button class="carousel-arrow carousel-arrow--left" type="button" aria-label="Previous case study" data-case-step="-1">←</button>
+            <button class="carousel-arrow carousel-arrow--right" type="button" aria-label="Next case study" data-case-step="1">→</button>
           </div>
-          <p class="case-empty" data-case-empty hidden>No featured case study is available in this category yet.</p>
-          <div class="case-dots" role="group" aria-label="Case study slides">
-            <button type="button" class="is-active" data-case-category="all" aria-label="All case studies" aria-current="true"></button>
-            <button type="button" data-case-category="supplements" aria-label="Supplement case studies" aria-current="false"></button>
-            <button type="button" data-case-category="food" aria-label="Food and beverage case studies" aria-current="false"></button>
-            <button type="button" data-case-category="beauty" aria-label="Beauty and fashion case studies" aria-current="false"></button>
-            <button type="button" data-case-category="pets" aria-label="Pet case studies" aria-current="false"></button>
-            <button type="button" data-case-category="all" aria-label="All case studies" aria-current="false"></button>
-          </div>
+          <div class="case-dots" role="group" aria-label="Case study slides"></div>
         </div>
       </section>
 
@@ -169,73 +158,82 @@
             <h2 class="display" id="ingredients-title">MY <em>INGREDIENTS.</em><br>YOUR RESULTS.</h2>
           </header>
           <div class="ingredient-grid">
-            <article class="ingredient-card ingredient-card--product">
-              <p class="ingredient-card__index">INGREDIENT 01</p>
-              <h3>PRODUCT THUMBNAIL</h3>
-              <p class="ingredient-card__description">The first image a visitor sees. I make it impossible to ignore.</p>
-              <img class="ingredient-card__product" src="images/ingredient-product.png" alt="The Beckham Stack supplement product page creative">
-              <span class="result-pill">↑ +18% AOV on avg</span>
-            </article>
-            <article class="ingredient-card ingredient-card--offer">
-              <p class="ingredient-card__index">INGREDIENT 05</p>
-              <h3>OFFER STACKING</h3>
-              <p class="ingredient-card__description">Highest-value bundle pre-selected. 75% of traffic takes it.</p>
-              <ul class="bundle-list">
-                <li><b>4 Bottles</b><span>BEST DEAL</span><strong>$14.95/ea</strong></li>
-                <li><b>3 Bottles</b><strong>$16.95/ea</strong></li>
-                <li><b>2 Bottles</b><strong>$19.95/ea</strong></li>
-                <li><b>1 Bottle</b><strong>$21.95/ea</strong></li>
-              </ul>
-              <span class="result-pill">↑ AOV up. Refunds down.</span>
-            </article>
-            <article class="ingredient-card ingredient-card--social">
-              <p class="ingredient-card__index">INGREDIENT 02</p>
-              <h3>SOCIAL PROOF</h3>
-              <p class="ingredient-card__stars" aria-label="Five stars">★★★★★</p>
-              <p class="ingredient-card__description">8,718 reviews · 4.4 / 5</p>
-              <div class="trust-score"><span>Trust score</span><strong>94%</strong><i><b></b></i></div>
-              <span class="result-pill">↑ +22% CVR uplift</span>
-            </article>
-            <article class="ingredient-card ingredient-card--ugc">
-              <p class="ingredient-card__index">INGREDIENT 03</p>
-              <h3>UGC VIDEO</h3>
-              <img class="ingredient-card__video" src="images/ingredient-video.png" alt="Customer testimonial video still">
-              <p class="ingredient-card__description">Real people. Real results. More trust than any ad.</p>
-              <span class="result-pill">↑ +31% trust score</span>
-            </article>
-            <article class="ingredient-card ingredient-card--copy">
-              <p class="ingredient-card__index">INGREDIENT 06</p>
-              <h3>COPY WRITING</h3>
-              <ul class="copy-list">
-                <li>Benefit-led headlines</li>
-                <li>Objection smashing</li>
-                <li>Urgency without lying</li>
-                <li>Scannable bullet flow</li>
-                <li>Story-driven product hooks</li>
-                <li>Micro-copy that converts</li>
-                <li class="is-muted">Generic agency fluff</li>
-                <li class="is-muted">“Award-winning” nonsense</li>
-              </ul>
-            </article>
-            <article class="ingredient-card ingredient-card--trust">
-              <p class="ingredient-card__index">INGREDIENT 08</p>
-              <h3>TRUST SIGNALS</h3>
-              <ul class="trust-list">
-                <li>🚚 <span>DELIVERED <b>THIS FRIDAY</b></span></li>
-                <li>✦ <span><b>IN STOCK</b> · READY TO SHIP</span></li>
-                <li>🔒 <span><b>SECURE CHECKOUT</b> · SSL ENCRYPTED</span></li>
-              </ul>
-              <span class="result-pill">↑ Kills hesitation cold</span>
-            </article>
-            <article class="ingredient-card ingredient-card--mobile">
-              <p class="ingredient-card__index">INGREDIENT 07</p>
-              <h3>MOBILE FIRST</h3>
-              <img class="ingredient-card__mobile-shot" src="images/ingredient-mobile.png" alt="Mobile-first Chichi product page">
-              <p class="ingredient-card__description">80% of traffic is mobile. We build for that first.</p>
-            </article>
+            <div class="ingredient-column">
+              <article class="ingredient-card ingredient-card--product">
+                <p class="ingredient-card__index">INGREDIENT 01</p>
+                <h3>PRODUCT THUMBNAIL</h3>
+                <p class="ingredient-card__description">The first image a visitor sees. I make it impossible to ignore.</p>
+                <img class="ingredient-card__product" src="images/ingredient-product.png" alt="The Beckham Stack supplement product page creative">
+                <span class="result-pill">↑ +18% AOV on avg</span>
+              </article>
+              <article class="ingredient-card ingredient-card--offer">
+                <p class="ingredient-card__index">INGREDIENT 05</p>
+                <h3>OFFER STACKING</h3>
+                <p class="ingredient-card__description">Highest-value bundle pre-selected. 75% of traffic takes it.</p>
+                <ul class="bundle-list">
+                  <li><b>4 Bottles</b><span>BEST DEAL</span><strong>$14.95/ea</strong></li>
+                  <li><b>3 Bottles</b><strong>$16.95/ea</strong></li>
+                  <li><b>2 Bottles</b><strong>$19.95/ea</strong></li>
+                  <li><b>1 Bottle</b><strong>$21.95/ea</strong></li>
+                </ul>
+                <span class="result-pill">↑ AOV up. Refunds down.</span>
+              </article>
+            </div>
+            <div class="ingredient-column">
+              <article class="ingredient-card ingredient-card--ugc">
+                <p class="ingredient-card__index">INGREDIENT 03</p>
+                <h3>UGC VIDEO</h3>
+                <img class="ingredient-card__video" src="images/ingredient-video.png" alt="Customer testimonial video still">
+                <p class="ingredient-card__description">Real people. Real results. More trust than any ad.</p>
+                <span class="result-pill">↑ +31% trust score</span>
+              </article>
+              <article class="ingredient-card ingredient-card--copy">
+                <p class="ingredient-card__index">INGREDIENT 06</p>
+                <h3>COPY WRITING</h3>
+                <ul class="copy-list">
+                  <li>Benefit-led headlines</li>
+                  <li>Objection smashing</li>
+                  <li>Urgency without lying</li>
+                  <li>Scannable bullet flow</li>
+                  <li>Story-driven product hooks</li>
+                  <li>Micro-copy that converts</li>
+                  <li class="is-muted">Generic agency fluff</li>
+                  <li class="is-muted">“Award-winning” nonsense</li>
+                </ul>
+              </article>
+            </div>
+            <div class="ingredient-column">
+              <article class="ingredient-card ingredient-card--trust">
+                <p class="ingredient-card__index">INGREDIENT 08</p>
+                <h3>TRUST SIGNALS</h3>
+                <ul class="trust-list">
+                  <li>🚚 <span>DELIVERED <b>THIS FRIDAY</b></span></li>
+                  <li>✦ <span><b>IN STOCK</b> · READY TO SHIP</span></li>
+                  <li>🔒 <span><b>SECURE CHECKOUT</b> · SSL ENCRYPTED</span></li>
+                </ul>
+                <span class="result-pill">↑ Kills hesitation cold</span>
+              </article>
+              <article class="ingredient-card ingredient-card--mobile">
+                <p class="ingredient-card__index">INGREDIENT 07</p>
+                <h3>MOBILE FIRST</h3>
+                <img class="ingredient-card__mobile-shot" src="images/ingredient-mobile.png" alt="Mobile-first Chichi product page">
+                <p class="ingredient-card__description">80% of traffic is mobile. We build for that first.</p>
+              </article>
+              <article class="ingredient-card ingredient-card--social">
+                <p class="ingredient-card__index">INGREDIENT 02</p>
+                <h3>SOCIAL PROOF</h3>
+                <p class="ingredient-card__stars" aria-label="Five stars">★★★★★</p>
+                <p class="ingredient-card__description">8,718 reviews · 4.4 / 5</p>
+                <div class="trust-score"><span>Trust score</span><strong>94%</strong><i><b></b></i></div>
+                <span class="result-pill">↑ +22% CVR uplift</span>
+              </article>
+            </div>
           </div>
           <div class="ingredient-ticker" aria-label="Conversion services">
-            <div>STICKY NAV <span>✦</span> SCROLL BANNERS <span>✦</span> A/B TESTING <span>✦</span> BOLD CTAS <span>✦</span> GIFT STACKING <span>✦</span> MEDIA BUYING <span>✦</span> PERFORMANCE AFFILIATE <span>✦</span></div>
+            <div class="ingredient-ticker__track">
+              <span class="ingredient-ticker__group">STICKY NAV <span>✦</span> SCROLL BANNERS <span>✦</span> A/B TESTING <span>✦</span> BOLD CTAS <span>✦</span> GIFT STACKING <span>✦</span> MEDIA BUYING <span>✦</span> PERFORMANCE AFFILIATE <span>✦</span></span>
+              <span class="ingredient-ticker__group" aria-hidden="true">STICKY NAV <span>✦</span> SCROLL BANNERS <span>✦</span> A/B TESTING <span>✦</span> BOLD CTAS <span>✦</span> GIFT STACKING <span>✦</span> MEDIA BUYING <span>✦</span> PERFORMANCE AFFILIATE <span>✦</span></span>
+            </div>
           </div>
           <div class="ingredient-bottom">
             <div class="ingredient-count">
@@ -245,8 +243,8 @@
             </div>
             <div class="ingredient-cta">
               <h3>READY TO GET<br>OUTCONVERTED?</h3>
-              <a class="audit-button audit-button--small" href="mailto:shishir.helps@gmail.com?subject=Free%20store%20audit">
-                GET YOUR FREE STORE AUDIT <img src="images/arrow.svg" alt="">
+              <a class="audit-button audit-button--ingredient" href="mailto:shishir.helps@gmail.com?subject=Free%20store%20audit">
+                <span>GET YOUR FREE STORE AUDIT <img src="images/arrow.svg" alt=""></span>
                 <small>Trusted by brands spending $2M+ annually on paid</small>
               </a>
             </div>
@@ -298,7 +296,10 @@
                 <li>A/B test launch</li>
               </ul>
               <a class="pricing-card__button" href="mailto:shishir.helps@gmail.com?subject=Confirm%20your%20order">
-                CONFIRM YOUR ORDER <img src="images/arrow.svg" alt="">
+                CONFIRM YOUR ORDER
+                <svg class="pricing-card__arrow" aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                  <path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
               </a>
             </article>
             <article class="pricing-card pricing-card--retainer">
@@ -313,7 +314,7 @@
                 <li>Cart</li><li>Checkout</li><li>Upsell Flows</li><li>Landing Pages</li>
               </ul>
               <a class="pricing-card__button pricing-card__button--light" href="mailto:shishir.helps@gmail.com?subject=Let's%20talk">
-                LET’S TALK <img src="images/arrow.svg" alt="">
+                LET’S TALK
               </a>
             </article>
           </div>
